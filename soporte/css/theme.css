@@ -1,0 +1,53 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+/* Animación de desplazamiento suave para los botones "Crear Ticket" y "Ver tickets" */
+.btn-create-ticket,
+.btn-view-tickets {
+    opacity: 0; /* Inicialmente ocultos */
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+}
+
+/* Animación de desplazamiento al pasar el mouse sobre el botón "Cerrar sesión" */
+.btn-logout {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.btn-logout:hover {
+    transform: scale(1.1); /* Escala el botón al pasar el mouse sobre él */
+}
+/* Agregar estilos similares a "Ver Tickets" para hacer que los tickets sean más compactos */
+.ticket-entry td {
+    padding: 0.25rem; /* Reducir el espacio interno de las celdas */
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.ticket-entry .btn {
+    padding: 0.2rem 0.4rem; /* Reducir el espacio alrededor de los botones */
+    font-size: 12px;
+}
+
+.container-content {
+    margin: 0; /* Eliminar los márgenes laterales */
+    padding: 0; /* Eliminar el relleno */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Agregar desplazamiento horizontal si es necesario */
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.card-body {
+    padding: 1.25rem; /* Incrementar el espacio dentro del contenedor de la tarjeta */
+}
+
